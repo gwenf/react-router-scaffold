@@ -31,7 +31,7 @@ class NavMain extends Component {
         <input type='checkbox' id='menu_active' checked/>
         <div id='wrapper' className='active'>
           <div id='menu'>
-            <span id='site-name'><label for='menu_active'>Preferably <i className="fa fa-arrow-left" onClick={this.iconBars}></i><i className="fa fa-bars" onClick={this.iconArrow}></i></label></span>
+            <span id='site-name'><label for='menu_active'>Site Name <i className="fa fa-arrow-left" onClick={this.iconBars}></i><i className="fa fa-bars" onClick={this.iconArrow}></i></label></span>
             <ul>
               <Link to='/'>
                 <li>Dashboard<i className="fa fa-home"></i></li>

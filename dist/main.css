@@ -108,3 +108,7 @@ input {
 .inactive-icon {
   display: none !important;
 }
+
+.fa-bars {
+  padding-left: 5px !important;
+}
