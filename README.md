@@ -6,3 +6,4 @@ Front-end scaffold with react-router, gulp, and webpack.
 * Messy dist folder
 * Hot reloading errors
 * Organize files within components folder
+* jQuery DOM manipulations for sidebar need to be cleaned up
