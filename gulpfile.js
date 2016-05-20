@@ -19,6 +19,7 @@ gulp.task('serve:web', serve({
 // Watch
 gulp.task('watch', function() {
     gulp.watch('./app/**/*', ['webpack'])
+    gulp.watch('./dist/*.css', ['webpack'])
 })
 
 gulp.task('default', ['webpack', 'serve:web', 'watch']);

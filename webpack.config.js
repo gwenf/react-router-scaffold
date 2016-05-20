@@ -4,6 +4,7 @@ var path = require('path');
 module.exports = {
   devtool: 'inline-source-map',
   entry: [
+    'bootstrap-loader',
     'webpack-hot-middleware/client',
     './app/router.js'
   ],
@@ -17,7 +18,12 @@ module.exports = {
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.ProvidePlugin({    // <added>
+        jQuery: 'jquery',
+        $: 'jquery',
+        jquery: 'jquery'   // </added>
+    })
     // new webpack.IgnorePlugin(/ReactContext|react\/addons/)
   ],
   module: {
@@ -33,7 +39,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style!css'
+        loader: 'style!css?sourceMap'
       },
       {
         test: /\.(eot|woff|woff2|ttf|svg|png|jpg)$/,
