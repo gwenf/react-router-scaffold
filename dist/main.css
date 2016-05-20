@@ -12,12 +12,12 @@ input {
 
 #wrapper {
     padding-left: 200px;
-    transition: all 1s;
+    transition: all .5s;
 }
 
 #menu_active:checked + #wrapper {
     padding-left: 44px;
-    transition: all 1s;
+    transition: all .5s;
 }
 
 #menu {

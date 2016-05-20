@@ -17,12 +17,14 @@ class NavMain extends Component {
     $('.fa-arrow-left').removeClass('inactive-icon');
     $('.fa-bars').addClass('inactive-icon');
     $('#menu_active:checked + #wrapper #menu').css('left','0');
+    $('#menu_active:checked + #wrapper').css('padding-left','210px');
   }
   iconBars(){
     $('.fa-arrow-left').addClass('inactive-icon');
     $('.fa-bars').removeClass('inactive-icon');
     $('.fa-bars').addClass('active-icon');
-    $('#menu_active:checked + #wrapper #menu').css('left','-160px')
+    $('#menu_active:checked + #wrapper #menu').css('left','-160px');
+    $('#menu_active:checked + #wrapper').css('padding-left','54px');
   }
 
   render(){
