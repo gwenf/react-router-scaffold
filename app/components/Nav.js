@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'react-router'
 // var FontAwesome = require('react-fontawesome');
 window.$ = window.jQuery = require('jquery');
-import FontAwesome from 'react-fontawesome'
-import Octicon from 'react-octicon'
+// import FontAwesome from 'react-fontawesome'
+// import Octicon from 'react-octicon'
 
 // require('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
 // require('font-awesome/css/font-awesome.css');
